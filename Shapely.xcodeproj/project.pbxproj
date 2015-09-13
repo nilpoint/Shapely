@@ -13,6 +13,7 @@
 		52C195351BA56B8300E9C09F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C195341BA56B8300E9C09F /* Images.xcassets */; };
 		52C195381BA56B8300E9C09F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C195361BA56B8300E9C09F /* LaunchScreen.xib */; };
 		52C195441BA56B8300E9C09F /* ShapelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C195431BA56B8300E9C09F /* ShapelyTests.swift */; };
+		52C1954E1BA56C1A00E9C09F /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1954D1BA56C1A00E9C09F /* ShapeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		52C1953D1BA56B8300E9C09F /* ShapelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C195421BA56B8300E9C09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C195431BA56B8300E9C09F /* ShapelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapelyTests.swift; sourceTree = "<group>"; };
+		52C1954D1BA56C1A00E9C09F /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				52C1952D1BA56B8300E9C09F /* AppDelegate.swift */,
 				52C1952F1BA56B8300E9C09F /* ViewController.swift */,
+				52C1954D1BA56C1A00E9C09F /* ShapeView.swift */,
 				52C195311BA56B8300E9C09F /* Main.storyboard */,
 				52C195341BA56B8300E9C09F /* Images.xcassets */,
 				52C195361BA56B8300E9C09F /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C1954E1BA56C1A00E9C09F /* ShapeView.swift in Sources */,
 				52C195301BA56B8300E9C09F /* ViewController.swift in Sources */,
 				52C1952E1BA56B8300E9C09F /* AppDelegate.swift in Sources */,
 			);
