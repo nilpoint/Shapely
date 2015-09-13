@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C1952E1BA56B8300E9C09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1952D1BA56B8300E9C09F /* AppDelegate.swift */; };
+		52C195301BA56B8300E9C09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1952F1BA56B8300E9C09F /* ViewController.swift */; };
+		52C195331BA56B8300E9C09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C195311BA56B8300E9C09F /* Main.storyboard */; };
+		52C195351BA56B8300E9C09F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C195341BA56B8300E9C09F /* Images.xcassets */; };
+		52C195381BA56B8300E9C09F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C195361BA56B8300E9C09F /* LaunchScreen.xib */; };
+		52C195441BA56B8300E9C09F /* ShapelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C195431BA56B8300E9C09F /* ShapelyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52C1953E1BA56B8300E9C09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C195201BA56B8300E9C09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C195271BA56B8300E9C09F;
+			remoteInfo = Shapely;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52C195281BA56B8300E9C09F /* Shapely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C1952C1BA56B8300E9C09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C1952D1BA56B8300E9C09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52C1952F1BA56B8300E9C09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52C195321BA56B8300E9C09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52C195341BA56B8300E9C09F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52C195371BA56B8300E9C09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		52C1953D1BA56B8300E9C09F /* ShapelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C195421BA56B8300E9C09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C195431BA56B8300E9C09F /* ShapelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapelyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C195251BA56B8300E9C09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C1953A1BA56B8300E9C09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C1951F1BA56B8300E9C09F = {
+			isa = PBXGroup;
+			children = (
+				52C1952A1BA56B8300E9C09F /* Shapely */,
+				52C195401BA56B8300E9C09F /* ShapelyTests */,
+				52C195291BA56B8300E9C09F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52C195291BA56B8300E9C09F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C195281BA56B8300E9C09F /* Shapely.app */,
+				52C1953D1BA56B8300E9C09F /* ShapelyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C1952A1BA56B8300E9C09F /* Shapely */ = {
+			isa = PBXGroup;
+			children = (
+				52C1952D1BA56B8300E9C09F /* AppDelegate.swift */,
+				52C1952F1BA56B8300E9C09F /* ViewController.swift */,
+				52C195311BA56B8300E9C09F /* Main.storyboard */,
+				52C195341BA56B8300E9C09F /* Images.xcassets */,
+				52C195361BA56B8300E9C09F /* LaunchScreen.xib */,
+				52C1952B1BA56B8300E9C09F /* Supporting Files */,
+			);
+			path = Shapely;
+			sourceTree = "<group>";
+		};
+		52C1952B1BA56B8300E9C09F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C1952C1BA56B8300E9C09F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52C195401BA56B8300E9C09F /* ShapelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				52C195431BA56B8300E9C09F /* ShapelyTests.swift */,
+				52C195411BA56B8300E9C09F /* Supporting Files */,
+			);
+			path = ShapelyTests;
+			sourceTree = "<group>";
+		};
+		52C195411BA56B8300E9C09F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C195421BA56B8300E9C09F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C195271BA56B8300E9C09F /* Shapely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C195471BA56B8300E9C09F /* Build configuration list for PBXNativeTarget "Shapely" */;
+			buildPhases = (
+				52C195241BA56B8300E9C09F /* Sources */,
+				52C195251BA56B8300E9C09F /* Frameworks */,
+				52C195261BA56B8300E9C09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shapely;
+			productName = Shapely;
+			productReference = 52C195281BA56B8300E9C09F /* Shapely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52C1953C1BA56B8300E9C09F /* ShapelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C1954A1BA56B8300E9C09F /* Build configuration list for PBXNativeTarget "ShapelyTests" */;
+			buildPhases = (
+				52C195391BA56B8300E9C09F /* Sources */,
+				52C1953A1BA56B8300E9C09F /* Frameworks */,
+				52C1953B1BA56B8300E9C09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C1953F1BA56B8300E9C09F /* PBXTargetDependency */,
+			);
+			name = ShapelyTests;
+			productName = ShapelyTests;
+			productReference = 52C1953D1BA56B8300E9C09F /* ShapelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C195201BA56B8300E9C09F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = nilpoint.sample;
+				TargetAttributes = {
+					52C195271BA56B8300E9C09F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					52C1953C1BA56B8300E9C09F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 52C195271BA56B8300E9C09F;
+					};
+				};
+			};
+			buildConfigurationList = 52C195231BA56B8300E9C09F /* Build configuration list for PBXProject "Shapely" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C1951F1BA56B8300E9C09F;
+			productRefGroup = 52C195291BA56B8300E9C09F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C195271BA56B8300E9C09F /* Shapely */,
+				52C1953C1BA56B8300E9C09F /* ShapelyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C195261BA56B8300E9C09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C195331BA56B8300E9C09F /* Main.storyboard in Resources */,
+				52C195381BA56B8300E9C09F /* LaunchScreen.xib in Resources */,
+				52C195351BA56B8300E9C09F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C1953B1BA56B8300E9C09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C195241BA56B8300E9C09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C195301BA56B8300E9C09F /* ViewController.swift in Sources */,
+				52C1952E1BA56B8300E9C09F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C195391BA56B8300E9C09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C195441BA56B8300E9C09F /* ShapelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52C1953F1BA56B8300E9C09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C195271BA56B8300E9C09F /* Shapely */;
+			targetProxy = 52C1953E1BA56B8300E9C09F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52C195311BA56B8300E9C09F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C195321BA56B8300E9C09F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52C195361BA56B8300E9C09F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C195371BA56B8300E9C09F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52C195451BA56B8300E9C09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C195461BA56B8300E9C09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C195481BA56B8300E9C09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shapely/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52C195491BA56B8300E9C09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shapely/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52C1954B1BA56B8300E9C09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapelyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shapely.app/Shapely";
+			};
+			name = Debug;
+		};
+		52C1954C1BA56B8300E9C09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapelyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shapely.app/Shapely";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C195231BA56B8300E9C09F /* Build configuration list for PBXProject "Shapely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C195451BA56B8300E9C09F /* Debug */,
+				52C195461BA56B8300E9C09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C195471BA56B8300E9C09F /* Build configuration list for PBXNativeTarget "Shapely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C195481BA56B8300E9C09F /* Debug */,
+				52C195491BA56B8300E9C09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52C1954A1BA56B8300E9C09F /* Build configuration list for PBXNativeTarget "ShapelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C1954B1BA56B8300E9C09F /* Debug */,
+				52C1954C1BA56B8300E9C09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52C195201BA56B8300E9C09F /* Project object */;
+}
