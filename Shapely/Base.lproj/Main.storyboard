@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgl-fp-naM">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgl-fp-naM">
                                 <rect key="frame" x="16" y="20" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m3g-RB-rPr"/>
@@ -30,10 +30,85 @@
                                     <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkH-PZ-liA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8p-KB-rvL">
+                                <rect key="frame" x="68" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="f4Z-Co-Jq1"/>
+                                    <constraint firstAttribute="height" constant="44" id="wWB-eK-VsG"/>
+                                </constraints>
+                                <state key="normal" image="addrect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1is-xn-3LD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-QD-Vfe">
+                                <rect key="frame" x="172" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="hTj-sg-GsO"/>
+                                    <constraint firstAttribute="height" constant="44" id="zlT-sX-afP"/>
+                                </constraints>
+                                <state key="normal" image="addoval">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbC-NY-sC9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ua8-CQ-7Nk">
+                                <rect key="frame" x="224" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pPW-Q5-Ste"/>
+                                    <constraint firstAttribute="width" constant="44" id="zku-XF-wKx"/>
+                                </constraints>
+                                <state key="normal" image="addtriangle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Lc-hz-IjP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcD-HH-1eD">
+                                <rect key="frame" x="276" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kSS-IJ-WJ2"/>
+                                    <constraint firstAttribute="width" constant="44" id="pRo-SA-gyM"/>
+                                </constraints>
+                                <state key="normal" image="addstar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBo-x7-0Ln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4v-k6-yqf">
+                                <rect key="frame" x="120" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bBv-Wt-jQm"/>
+                                    <constraint firstAttribute="width" constant="44" id="tKZ-NQ-28D"/>
+                                </constraints>
+                                <state key="normal" image="addcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzA-Be-60V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="I8p-KB-rvL" secondAttribute="top" id="2Co-P3-6jV"/>
+                            <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="Ua8-CQ-7Nk" secondAttribute="top" id="8Pz-IL-v3I"/>
+                            <constraint firstItem="Ua8-CQ-7Nk" firstAttribute="leading" secondItem="jf3-QD-Vfe" secondAttribute="trailing" constant="8" id="A37-Nr-9IX"/>
+                            <constraint firstItem="jf3-QD-Vfe" firstAttribute="leading" secondItem="s4v-k6-yqf" secondAttribute="trailing" constant="8" id="BPC-GC-HVs"/>
                             <constraint firstItem="pgl-fp-naM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Icf-ff-OpE"/>
+                            <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="jf3-QD-Vfe" secondAttribute="top" id="LrK-vB-0IA"/>
+                            <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="KcD-HH-1eD" secondAttribute="top" id="P8a-ii-Ctk"/>
+                            <constraint firstItem="KcD-HH-1eD" firstAttribute="leading" secondItem="Ua8-CQ-7Nk" secondAttribute="trailing" constant="8" id="RIo-yp-DVi"/>
+                            <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="s4v-k6-yqf" secondAttribute="top" id="WCY-ij-9Tm"/>
+                            <constraint firstItem="s4v-k6-yqf" firstAttribute="leading" secondItem="I8p-KB-rvL" secondAttribute="trailing" constant="8" id="Yy5-3l-a4n"/>
+                            <constraint firstItem="I8p-KB-rvL" firstAttribute="leading" secondItem="pgl-fp-naM" secondAttribute="trailing" constant="8" id="wTS-L5-ycx"/>
                             <constraint firstItem="pgl-fp-naM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zTO-AI-ntm"/>
                         </constraints>
                     </view>
@@ -43,6 +118,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addcircle" width="44" height="44"/>
+        <image name="addoval" width="44" height="44"/>
+        <image name="addrect" width="44" height="44"/>
         <image name="addsquare" width="44" height="44"/>
+        <image name="addstar" width="44" height="44"/>
+        <image name="addtriangle" width="44" height="44"/>
     </resources>
 </document>

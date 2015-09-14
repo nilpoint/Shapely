@@ -32,6 +32,35 @@ class ShapeView : UIView {
     case .Square, .Rectangle:
       shapePath = UIBezierPath(rect: rect)
       break;
+    case .Circle, .Oval:
+      shapePath = UIBezierPath(ovalInRect: rect)
+      break;
+    case .Triangle:
+      shapePath = UIBezierPath()
+      shapePath.moveToPoint(CGPoint(x: rect.midX, y: rect.minY))
+      shapePath.addLineToPoint(CGPoint(x: rect.maxX, y: rect.maxY))
+      shapePath.addLineToPoint(CGPoint(x: rect.minX, y: rect.maxY))
+      shapePath.closePath()
+      break;
+    case .Star:
+      shapePath = UIBezierPath()
+      let armRotation = CGFloat(M_PI)*2.0/5.0
+      var angle = armRotation
+      let distance = rect.width*0.38
+      var point = CGPoint(x: rect.midX, y: rect.minY)
+      shapePath.moveToPoint(point)
+      for _ in 0..<5 {
+        point.x += CGFloat(cos(Double(angle)))*distance
+        point.y += CGFloat(sin(Double(angle)))*distance
+        shapePath.addLineToPoint(point)
+        angle -= armRotation
+        point.x += CGFloat(cos(Double(angle)))*distance
+        point.y += CGFloat(sin(Double(angle)))*distance
+        shapePath.addLineToPoint(point)
+        angle += armRotation*2
+      }
+      shapePath.closePath()
+      break;
     default:
       // TODO: Add cases for remaining shapes
       shapePath = UIBezierPath()
