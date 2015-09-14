@@ -39,6 +39,28 @@ class ViewController: UIViewController {
         randomCenter.x += CGFloat(arc4random_uniform(UInt32(safeRect.width)))
         randomCenter.y += CGFloat(arc4random_uniform(UInt32(safeRect.height)))
         shapeView.center = randomCenter
+        
+        let pan = UIPanGestureRecognizer(target: self, action: "moveShape:")
+        pan.maximumNumberOfTouches = 1
+        shapeView.addGestureRecognizer(pan)
+      }
+    }
+  }
+  
+  func moveShape(gesture: UIPanGestureRecognizer) {
+    if let shapeView = gesture.view as? ShapeView {
+     let dragDelta = gesture.translationInView(shapeView.superview!)
+      switch gesture.state {
+      case .Began, .Changed:
+        shapeView.transform = CGAffineTransformMakeTranslation(dragDelta.x, dragDelta.y)
+        break;
+      case .Ended:
+        shapeView.transform = CGAffineTransformIdentity
+        shapeView.frame = CGRectOffset(shapeView.frame, dragDelta.x, dragDelta.y)
+        break;
+      default:
+        shapeView.transform = CGAffineTransformIdentity
+        break;
       }
     }
   }
