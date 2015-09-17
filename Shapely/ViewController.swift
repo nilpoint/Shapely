@@ -43,13 +43,16 @@ class ViewController: UIViewController {
         let pan = UIPanGestureRecognizer(target: self, action: "moveShape:")
         pan.maximumNumberOfTouches = 1
         shapeView.addGestureRecognizer(pan)
+        
+        let pin = UIPinchGestureRecognizer(target: self, action: "resizeShape:")
+        shapeView.addGestureRecognizer(pin)
       }
     }
   }
   
   func moveShape(gesture: UIPanGestureRecognizer) {
     if let shapeView = gesture.view as? ShapeView {
-     let dragDelta = gesture.translationInView(shapeView.superview!)
+      let dragDelta = gesture.translationInView(shapeView.superview!)
       switch gesture.state {
       case .Began, .Changed:
         shapeView.transform = CGAffineTransformMakeTranslation(dragDelta.x, dragDelta.y)
@@ -60,7 +63,31 @@ class ViewController: UIViewController {
         break;
       default:
         shapeView.transform = CGAffineTransformIdentity
+      }
+    }
+  }
+  
+  func resizeShape(gesture: UIPinchGestureRecognizer) {
+    if let shapeView = gesture.view as? ShapeView {
+      let pinchScale = gesture.scale
+      switch gesture.state {
+      case .Began, .Changed:
+        shapeView.transform = CGAffineTransformMakeScale(pinchScale, pinchScale)
         break;
+      case .Ended:
+        shapeView.transform = CGAffineTransformIdentity
+        var frame = shapeView.frame
+        let xDelta = frame.width * pinchScale - frame.width
+        let yDelta = frame.height * pinchScale - frame.height
+        frame.size.width += xDelta
+        frame.size.height += yDelta
+        frame.origin.x -= xDelta/2
+        frame.origin.y -= yDelta/2
+        shapeView.frame = frame
+        shapeView.setNeedsDisplay()
+        break;
+      default:
+        shapeView.transform = CGAffineTransformIdentity
       }
     }
   }
