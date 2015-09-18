@@ -38,7 +38,13 @@ class ViewController: UIViewController {
         var randomCenter = safeRect.origin
         randomCenter.x += CGFloat(arc4random_uniform(UInt32(safeRect.width)))
         randomCenter.y += CGFloat(arc4random_uniform(UInt32(safeRect.height)))
-        shapeView.center = randomCenter
+//        shapeView.center = randomCenter
+        shapeView.center = button.center
+        shapeView.transform = CGAffineTransformMakeScale(0.4, 0.4)
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+          shapeView.center = randomCenter
+          shapeView.transform = CGAffineTransformIdentity
+        })
         
         let pan = UIPanGestureRecognizer(target: self, action: "moveShape:")
         pan.maximumNumberOfTouches = 1
