@@ -23,7 +23,11 @@ class ShapeView : UIView {
   let alternateHeight: CGFloat = 100.0/2
   let strokeWidth = CGFloat(8.0)
   let shape: ShapeSelector
-  var color: UIColor = UIColor.whiteColor()
+  var color: UIColor = UIColor.whiteColor() {
+    didSet {
+      setNeedsDisplay()
+    }
+  }
   var path: UIBezierPath {
     var rect = bounds
     rect.inset(dx: strokeWidth/2.0, dy: strokeWidth/2.0)
@@ -88,7 +92,10 @@ class ShapeView : UIView {
   }
   
   override func drawRect(rect: CGRect) {
+    let shapePath = path
+    UIColor.blackColor().colorWithAlphaComponent(0.4).setFill()
+    shapePath.fill()
     color.setStroke()
-    path.stroke()
+    shapePath.stroke()
   }
 }

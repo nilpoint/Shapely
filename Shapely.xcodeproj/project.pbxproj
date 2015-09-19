@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					52C195271BA56B8300E9C09F = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4568M5R2P6;
 					};
 					52C1953C1BA56B8300E9C09F = {
 						CreatedOnToolsVersion = 6.4;
@@ -346,7 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Shapely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,7 +359,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Shapely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -415,6 +420,7 @@
 				52C195491BA56B8300E9C09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C1954A1BA56B8300E9C09F /* Build configuration list for PBXNativeTarget "ShapelyTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +429,7 @@
 				52C1954C1BA56B8300E9C09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

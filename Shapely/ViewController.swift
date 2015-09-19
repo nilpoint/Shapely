@@ -52,6 +52,14 @@ class ViewController: UIViewController {
         
         let pin = UIPinchGestureRecognizer(target: self, action: "resizeShape:")
         shapeView.addGestureRecognizer(pin)
+        
+        let dbTap = UITapGestureRecognizer(target: self, action: "changeColor:")
+        dbTap.numberOfTapsRequired = 2
+        shapeView.addGestureRecognizer(dbTap)
+        
+        let triTap = UIGestureRecognizer(target: self, action: "sendShapeToBack:")
+        dbTap.numberOfTapsRequired = 3
+        shapeView.addGestureRecognizer(triTap)
       }
     }
   }
@@ -95,6 +103,25 @@ class ViewController: UIViewController {
       default:
         shapeView.transform = CGAffineTransformIdentity
       }
+    }
+  }
+  
+  func changeColor(gesture: UITapGestureRecognizer) {
+    if gesture.state == .Ended {
+      if let shapeView = gesture.view as? ShapeView {
+        let currentColor = shapeView.color
+        var newColor: UIColor!
+        do {
+          newColor = colors[Int(arc4random_uniform(UInt32(colors.count)))]
+        } while currentColor == newColor
+        shapeView.color = newColor
+      }
+    }
+  }
+  
+  func sendShapeToBack(gesture: UITapGestureRecognizer) {
+    if gesture.state == .Ended {
+      view.sendSubviewToBack(gesture.view!)
     }
   }
 
