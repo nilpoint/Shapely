@@ -57,9 +57,11 @@ class ViewController: UIViewController {
         dbTap.numberOfTapsRequired = 2
         shapeView.addGestureRecognizer(dbTap)
         
-        let triTap = UIGestureRecognizer(target: self, action: "sendShapeToBack:")
-        dbTap.numberOfTapsRequired = 3
+        let triTap = UITapGestureRecognizer(target: self, action: "sendShapeToBack:")
+        triTap.numberOfTapsRequired = 3
         shapeView.addGestureRecognizer(triTap)
+        
+        dbTap.requireGestureRecognizerToFail(triTap)
       }
     }
   }
